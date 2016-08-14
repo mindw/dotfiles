@@ -10,6 +10,8 @@ unset file;
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
+# make sure history is saved on every command!
+PROMPT_COMMAND='history -a;history -n'
 
 # Autocorrect typos in path names when using `cd`
 #shopt -s cdspell;
