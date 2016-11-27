@@ -10,11 +10,12 @@ alias j="jobs"
 
 # Detect which `ls` flavor is in use
 if ls --version | grep -q GNU; then # GNU `ls`
-    colorflag="--color"
+    colorflag="--color=auto"
 else # OS X `ls`
     colorflag="-G"
 fi
 
+alias dir=
 alias ..="cd .."
 alias ...="cd ../.."
 
@@ -58,19 +59,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-
-#
-# History
-#
-
-# Entries beginning with space aren't added into history, and duplicate
-# entries will be erased (leaving the most recent entry).
-export HISTCONTROL="ignorespace:erasedups"
-# Give history timestamps.
-export HISTTIMEFORMAT="[%F %T] "
-# Lots o' history.
-export HISTSIZE=100000
-export HISTFILESIZE=100000
 
 # Easily re-execute the last history command.
 alias r="fc -s"

@@ -1,4 +1,8 @@
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/sbin:$PATH"
 
 # python local user installs
+export PATH=$HOME/bin:$PATH
+
+# python local user installs
 export PATH=$HOME/.local/bin:$PATH
+
