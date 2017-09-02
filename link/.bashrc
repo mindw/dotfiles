@@ -18,7 +18,7 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
-export HOMEBREW_GITHUB_API_TOKEN="9dd967b7633d8cb84502095992cbbb9ba4f31142"
+export HOMEBREW_GITHUB_API_TOKEN="XXXXX"
 
 # go 
 export GOPATH=$HOME/go
