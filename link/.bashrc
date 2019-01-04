@@ -22,3 +22,5 @@ export HOMEBREW_GITHUB_API_TOKEN="XXXXX"
 
 # go 
 export GOPATH=$HOME/go
+
+eval $(thefuck --alias)
