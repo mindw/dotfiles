@@ -10,6 +10,7 @@ alias j="jobs"
 # git stuff
 alias gup='git remote update -p'
 alias gra='git rebase --autostash'
+alias gss='git status -s'
 
 # kubernetes stuff
 alias kimg="kubectl get pods --all-namespaces -o jsonpath={..image} | tr ' ' '\n' | sort -u"
@@ -58,9 +59,9 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias grep='ggrep --color=auto'
+alias fgrep='gfgrep --color=auto'
+alias egrep='gegrep --color=auto'
 
 alias where='which -a'
 

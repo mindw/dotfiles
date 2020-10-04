@@ -1,15 +1,9 @@
-brew tap homebrew/completions
-brew tap homebrew/dupes
-brew tap homebrew/python
-
-brew install coreutils tree dox2unix grep wget curl
-brew install bash bash-completion
+brew install coreutils tree dos2unix grep wget curl sed
+brew install bash bash-completion@2
 brew install p7zip unrar socat xz
 brew install git
 brew install graphviz pandoc platuml
 brew install openssh
-brew install cmake ninja
+brew install cmake
 brew install go godep
-brew install python sphinx-doc
-brew install node
-
+brew install python
