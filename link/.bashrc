@@ -20,7 +20,12 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 export HOMEBREW_GITHUB_API_TOKEN="XXXXX"
 
+export HOMEBREW_NO_INSTALL_CLEANUP=true
 # go 
 export GOPATH=$HOME/go
 
+export KUBE_EDITOR="subl -n -w"
+
 eval $(thefuck --alias)
+
+eval "$(thefuck --alias)"
